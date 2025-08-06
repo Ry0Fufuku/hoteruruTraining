@@ -32,10 +32,14 @@
 									<button type="submit" class="btn text-white shadow-sm moattravel-btn">検索</button>
 								</div>
 							</form>
+							
 							<a th:href="@{/admin/houses/register}" class="btn text-white shadow-sm mb-3 moattravel-btn">登録</a> 
 						</div>
 						
-							<table class="table">
+						<div th:if="${successMessage}" class="alert alert-info">
+							<span th:text="${successMessage}"></span>
+						</div>
+						<table class="table">
 								<thead>
 									<tr>
 										<th scope="col">ID</th>
