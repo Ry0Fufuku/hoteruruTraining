@@ -79,7 +79,7 @@ public class HouseService {
 			
 			String hashedImageName = generateNewFileName(imageName);
 			
-			Path filePath = Paths.get("src/main/resources/statci/storage/" + hashedImageName);
+			Path filePath = Paths.get("src/main/resources/static/storage/" + hashedImageName);
 			
 			copyImageFile(imageFile,filePath);
 			
